@@ -1,1 +1,32 @@
+class Command:
 
+        def __init__(self,code,message):
+
+            self._code=code
+
+            self._message=message
+
+            return
+            
+
+        
+
+        def interpret(self,f):
+
+            os.system('espeak "{}"'.format(self._message))
+
+            i=0
+    
+            while i< len(c):
+                
+                GPIO.output(19,0)
+
+                GPIO.output(18,int(i))
+
+                i=i+1
+
+                time.sleep(f/2)
+                
+                GPIO.output(19,1)
+
+                time.sleep(f/2)
