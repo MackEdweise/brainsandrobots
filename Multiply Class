@@ -1,0 +1,20 @@
+Class Multiply:
+
+  def __init__(x,y):
+  
+    self.value=x*y
+    self.pcode=[]
+    self.message=""
+    self.cncfile="multiplygrbl"
+    
+    s=x
+    for i in range (y):
+      a=Add(s,x)
+      c=Command(a.pcode,a.message)
+      c.interpret(2)
+      self.pcode.append(a.pcode)
+      self.message=self.message+a.message
+      s=a.value
+    
+    return
+   
