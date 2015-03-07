@@ -1,2 +1,2 @@
 # brainsandrobots
-A repo containing programming projects related to my overall goal to develop a mobile neuro-science, electronics and robotics lab.
+A repo containing programming projects related to my overall goal to develop a mobile mathematics, neuro-science, electronics and robotics lab.
