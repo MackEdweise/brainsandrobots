@@ -1,0 +1,11 @@
+
+Class Add:
+
+  def __init__(x,y):
+    self._value=x+y
+    self._message="Add {} and {} by latching {}, adding {} to {}. Result is {}".format(x,y,x,x,y,x+y))
+    self._pcode=[1,1,1,1,1,1,1,1]
+    self._pcode[x]=0
+    self._cncfile="addgrbl"
+    
+  
