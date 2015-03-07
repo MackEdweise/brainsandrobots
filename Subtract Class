@@ -1,9 +1,15 @@
 Class Subtract:
   
   def __init__(x,y):
-    self._value=x-y
+  
+    self.value=x-y
     z=abs(y-9) #9's compliment of y
-    self._message="Subtract {} from {} by latching {}, adding {} to {}. Result is {}".format(y,x,z,z,x,x-y))
-    self._pcode=[1,1,1,1,1,1,1,1]
-    self._pcode[z]=0
-    self._cncfile="subtractgrbl"
+    self.message="Subtract {} from {} by latching {}, adding {} to {}. Result is {}".format(y,x,z,z,x,x-y))
+    self.pcode=[1,1,1,1,1,1,1,1]
+    self.pcode[z]=0
+    self.cncfile="subtractgrbl"
+    
+    c=Command(self.pcode,self.message)
+    c.interpret(2)
+    
+    return
