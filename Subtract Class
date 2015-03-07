@@ -1,0 +1,9 @@
+Class Subtract:
+  
+  def __init__(x,y):
+    self._value=x-y
+    z=abs(y-9) #9's compliment of y
+    self._message="Subtract {} from {} by latching {}, adding {} to {}. Result is {}".format(y,x,z,z,x,x-y))
+    self._pcode=[1,1,1,1,1,1,1,1]
+    self._pcode[z]=0
+    self._cncfile="subtractgrbl"
