@@ -5,6 +5,7 @@ Class Get1:
     self.value=1
     self.pcode=[0,1,1,1,1,1,1,1,1,1]
     self.message="Set current working value as one"
+    self.cncfile="get1grbl"
     
     c=Command(self.pcode,self.message)
     c.interpret(2)
