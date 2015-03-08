@@ -1,6 +1,6 @@
 Class Divide:
 
-  def __init__(x,y):
+  def __init__(self,x,y):
   
     self.value=x//y
     self.pcode=[]
