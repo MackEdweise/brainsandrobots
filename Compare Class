@@ -7,6 +7,6 @@ def Compare:
     self.pcode[y+10]=0
     c=Command(self.pcode,self.message)
     c.interpret(2)
-    self.cncfile="subtractgrbl"
+    self.cncfile="comparegrbl"
     
     return x>y
