@@ -6,6 +6,10 @@ Class Divide:
     self.pcode=[]
     self.cncfile="dividegrbl"
     
+    return
+    
+  def execute(self):
+  
     s=y
     r=0
     while s<x:
@@ -29,4 +33,4 @@ Class Divide:
     
       s=a.value
     
-    return
+    return self.value
