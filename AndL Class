@@ -5,6 +5,7 @@ Class AndL:
     self.value=x
     self.message="Set {} as and gate left operand".format(x)
     self.pcode=[1,0,1,1,1,1,1,1,1,1]
+    self.cncfile="andlgrbl"
     
     c=Command(self.pcode,self.message)
     c.interpret(2)
