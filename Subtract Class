@@ -3,6 +3,7 @@ Class Subtract:
   def __init__(x,y):
   
     self.value=x-y
+    self.pcode=[]
     self.message="Result is {}".format(self.value)
     self.cncfile="subtractgrbl"
     
@@ -25,7 +26,7 @@ Class Subtract:
       ga.interpret(2)
       i+=1
       
-    e=Command([],self.message)
+    e=Command(self.pcode,self.message)
     e.interpret(2)
       
     return
