@@ -4,7 +4,7 @@ Class Multiply:
   
     self.value=x*y
     self.pcode=[]
-    self.message=""
+    self.message="Result is {}".format(self.value)
     self.cncfile="multiplygrbl"
     
     s=x
@@ -12,9 +12,10 @@ Class Multiply:
       a=Add(s,x)
       c=Command(a.pcode,a.message)
       c.interpret(2)
-      self.pcode.append(a.pcode)
-      self.message=self.message+a.message
       s=a.value
+    
+    d=Command(self.pcode,self.message)
+    d.interpret(2)
     
     return
    
