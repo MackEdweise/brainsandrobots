@@ -8,3 +8,10 @@ Class GetCompare:
     self.cncfile="getcomparegrbl"
     
     return
+    
+  def execute(self):
+    
+    c=Command(self.pcode,self.message)
+    c.interpret(2)
+    
+    return self.value
