@@ -3,13 +3,29 @@ Class Subtract:
   def __init__(x,y):
   
     self.value=x-y
-    z=abs(y-9) #9's compliment of y
-    self.message="Subtract {} from {} by latching {}, adding {} to {}. Result is {}".format(y,x,z,z,x,x-y))
-    self.pcode=[1,1,1,1,1,1,1,1]
-    self.pcode[z]=0
+    self.message="Result is {}".format(self.value)
     self.cncfile="subtractgrbl"
     
-    c=Command(self.pcode,self.message)
-    c.interpret(2)
-    
+    i=0
+    while a.value!=x:
+      a=Add(i,y)
+      c=Command(a.pcode,a.message)
+      c.interpret(2)
+      COMP=Compare(x,a.value-1)
+      d=Command(comp.pcode,comp.message)
+      d.interpret(2)
+      A=AndL()
+      and=Command(A.pcode,A.message)
+      and.interpret(2)
+      A2=AndR()
+      and2=Command(A2.pcode,A2.message)
+      and2.interpret(2)
+      GA=GetAnd()
+      ga=Command(GA.pcode,GA.message)
+      ga.interpret(2)
+      i+=1
+      
+    e=Command([],self.message)
+    e.interpret(2)
+      
     return
