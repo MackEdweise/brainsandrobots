@@ -1,0 +1,10 @@
+def Compare:
+  def __init__(x,y):  # y would typically be an addition, and x a number.
+    self.value=x>y
+    self.message="Compare {} and {}".format(x,y))
+    self.pcode=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    self.pcode[x]=0
+    self.pcode[y+10]=0
+    c=Command(self.pcode,self.message)
+    c.interpret(2)
+    self.cncfile="subtractgrbl"
