@@ -8,3 +8,5 @@ def Compare:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     self.cncfile="subtractgrbl"
+    
+    return
