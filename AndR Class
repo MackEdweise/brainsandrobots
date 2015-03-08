@@ -7,7 +7,11 @@ Class AndR:
     self.message="Set {} as and gate right operand".format(x)
     self.cncfile="andrgrbl"
     
+    return
+    
+  def execute(self):
+  
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return
+    return self.value
