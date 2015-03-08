@@ -7,6 +7,10 @@ Class Multiply:
     self.message="Result is {}".format(self.value)
     self.cncfile="multiplygrbl"
     
+    return
+  
+  def execute(self):
+  
     s=x
     for i in range (y):
       a=Add(s,x)
@@ -16,6 +20,5 @@ Class Multiply:
     
     d=Command(self.pcode,self.message)
     d.interpret(2)
-    
-    return
-   
+  
+    return self.value
