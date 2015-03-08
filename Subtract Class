@@ -6,7 +6,11 @@ Class Subtract:
     self.pcode=[]
     self.message="Result is {}".format(self.value)
     self.cncfile="subtractgrbl"
+      
+    return
     
+  def execute(self):
+  
     i=0
     while a.value!=x:
       a=Add(i,y)
@@ -28,5 +32,5 @@ Class Subtract:
       
     e=Command(self.pcode,self.message)
     e.interpret(2)
-      
-    return
+    
+    return self.value
