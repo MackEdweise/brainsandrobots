@@ -8,5 +8,7 @@ def Compare:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     self.cncfile="comparegrbl"
+    gc=GetCompare(self.value)
+    gc.interpret(2)
     
     return x>y
