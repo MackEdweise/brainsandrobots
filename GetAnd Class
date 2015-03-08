@@ -1,0 +1,12 @@
+Class GetAnd:
+
+  def __init__(x,y):
+  
+    self.value= x and y
+    self.pcode=[1,1,1,1,0,1,1,1,1,1]
+    self.message="Set and gate output {} to current working logic value".format(self.value)
+    self.cncfile="getandgrbl"
+    
+    return self.value
+  
+    
