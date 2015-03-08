@@ -9,4 +9,4 @@ def Compare:
     c.interpret(2)
     self.cncfile="subtractgrbl"
     
-    return
+    return x>y
