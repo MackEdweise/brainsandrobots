@@ -1,6 +1,6 @@
 Class Multiply:
 
-  def __init__(x,y):
+  def __init__(self,x,y):
   
     self.value=x*y
     self.pcode=[]
@@ -17,5 +17,5 @@ Class Multiply:
     d=Command(self.pcode,self.message)
     d.interpret(2)
     
-    return self.value
+    return
    
