@@ -11,9 +11,11 @@ Class Invert:
     self.message="Invert current logic value {} to {}".format(x,self.value)
     self.cncfile="invertgrbl"
     
+    return
+    
+  def execute(self):
+  
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return
-    
-  
+    return self.value
