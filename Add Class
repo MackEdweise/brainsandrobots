@@ -12,6 +12,6 @@ Class Add:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return
+    return self.value
     
   
