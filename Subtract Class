@@ -1,6 +1,6 @@
 Class Subtract:
   
-  def __init__(x,y):
+  def __init__(self,x,y):
   
     self.value=x-y
     self.pcode=[]
@@ -29,4 +29,4 @@ Class Subtract:
     e=Command(self.pcode,self.message)
     e.interpret(2)
       
-    return self.value
+    return
