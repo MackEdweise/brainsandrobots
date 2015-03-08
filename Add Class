@@ -1,7 +1,7 @@
 
 Class Add:
 
-  def __init__(x,y):
+  def __init__(self,x,y):
   
     self.value=x+y
     self.message="Add {} and {} by latching {}, adding {} to {}. Result is {}".format(x,y,x,x,y,x+y))
@@ -12,6 +12,7 @@ Class Add:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return self.value
+    return
+  
     
   
