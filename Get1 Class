@@ -1,6 +1,6 @@
 Class Get1:
   
-  def __init__():
+  def __init__(self):
   
     self.value=1
     self.pcode=[0,1,1,1,1,1,1,1,1,1]
@@ -10,4 +10,4 @@ Class Get1:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return self.value
+    return
