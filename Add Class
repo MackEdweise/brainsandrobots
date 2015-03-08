@@ -5,7 +5,7 @@ Class Add:
   
     self.value=x+y
     self.message="Add {} and {} by latching {}, adding {} to {}. Result is {}".format(x,y,x,x,y,x+y))
-    self.pcode=[1,1,1,1,1,1,1,1]
+    self.pcode=[1,1,1,1,1,1,1,1,1,1]
     self.pcode[x]=0
     self.cncfile="addgrbl"
     
