@@ -11,4 +11,4 @@ def Compare:
     gc=GetCompare(self.value)
     gc.interpret(2)
     
-    return x>y
+    return
