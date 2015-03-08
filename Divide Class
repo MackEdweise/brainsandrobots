@@ -1,10 +1,9 @@
-Class Multiply:
+Class Divide:
 
   def __init__(x,y):
   
     self.value=x/y
     self.pcode=[]
-    self.message=""
     self.cncfile="dividegrbl"
     
     s=y
@@ -13,8 +12,6 @@ Class Multiply:
       a=Add(s,y)
       c=Command(a.pcode,a.message)
       c.interpret(2)
-      self.pcode.append(a.pcode)
-      self.message=self.message+a.message
       
       b=Compare(s,x)
       d=Command(b.pcode,b.message)
@@ -23,8 +20,10 @@ Class Multiply:
       self.message=self.message+b.message
       r+=1
       
+      self.message="Add one to count, yielding {}".format(r)
+      
       p=Add(r,0)      #To display the count r
-      e=Command(p.pcode,"Add one to count, yielding {}".format(r))
+      e=Command(p.pcode,self.message)
       e.interpret(2)
     
     
