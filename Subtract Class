@@ -29,4 +29,4 @@ Class Subtract:
     e=Command(self.pcode,self.message)
     e.interpret(2)
       
-    return
+    return self.value
