@@ -1,5 +1,5 @@
 def Compare:
-  def __init__(x,y):  # y would typically be an addition, and x a number.
+  def __init__(self,x,y):  # y would typically be an addition, and x a number.
     self.value=x>y
     self.message="Compare {} and {}".format(x,y))
     self.pcode=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
