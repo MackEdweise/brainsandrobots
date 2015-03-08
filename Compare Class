@@ -2,13 +2,19 @@ def Compare:
   def __init__(self,x,y):  # y would typically be an addition, and x a number.
     self.value=x>y
     self.message="Compare {} and {}".format(x,y))
+    self.cncfile="comparegrbl"
     self.pcode=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     self.pcode[x]=0
     self.pcode[y+10]=0
+    
+    return
+  
+  def execute(self):
+  
     c=Command(self.pcode,self.message)
     c.interpret(2)
-    self.cncfile="comparegrbl"
+    
     gc=GetCompare(self.value)
     gc.interpret(2)
     
-    return
+    return self.value
