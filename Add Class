@@ -9,10 +9,14 @@ Class Add:
     self.pcode[x]=0
     self.cncfile="addgrbl"
     
+    return
+    
+  def execute(self):
+  
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return
+    return self.value
   
     
   
