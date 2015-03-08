@@ -17,5 +17,5 @@ Class Multiply:
     d=Command(self.pcode,self.message)
     d.interpret(2)
     
-    return
+    return self.value
    
