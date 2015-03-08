@@ -1,6 +1,6 @@
 Class Invert:
 
-  def __init__(x):
+  def __init__(self,x):
   
     if x==1:
       self.value=0
@@ -14,6 +14,6 @@ Class Invert:
     c=Command(self.pcode,self.message)
     c.interpret(2)
     
-    return self.value
+    return
     
   
