@@ -17,11 +17,11 @@ class Command:
 
             i=0
     
-            while i< len(c):
+            while i< len(self._code):
                 
                 GPIO.output(19,0)
 
-                GPIO.output(18,int(i))
+                GPIO.output(18,self._code[i])
 
                 i=i+1
 
@@ -30,3 +30,5 @@ class Command:
                 GPIO.output(19,1)
 
                 time.sleep(f/2)
+            
+            return
