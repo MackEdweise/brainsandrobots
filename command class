@@ -1,3 +1,7 @@
+import os
+import time
+import RPi.GPIO as GPIO
+
 class Command:
 
         def __init__(self,code,message):
