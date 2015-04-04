@@ -1,7 +1,11 @@
-Class GetAnd:
+from Command import *
+
+class GetAnd:
 
   def __init__(self,x,y):
-  
+    
+    self.x=x
+    self.y=y
     self.value= x and y
     self.pcode=[1,1,1,1,0,1,1,1,1,1]
     self.message="Set and gate output {} to current working logic value".format(self.value)
