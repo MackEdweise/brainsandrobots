@@ -1,7 +1,10 @@
-Class AndL:
+from Command import *
+
+class AndL:
 
   def __int__(self,x):
-  
+    
+    self.x=x
     self.value=x
     self.message="Set {} as and gate left operand".format(x)
     self.pcode=[1,0,1,1,1,1,1,1,1,1]
