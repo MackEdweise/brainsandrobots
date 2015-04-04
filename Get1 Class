@@ -1,4 +1,6 @@
-Class Get1:
+from Command import *
+
+class Get1:
   
   def __init__(self):
   
