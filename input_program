@@ -1,5 +1,7 @@
 from translator_functions import *
 
+talkg("Hello")
+
 p=input("Problem: ")
 print()
 
