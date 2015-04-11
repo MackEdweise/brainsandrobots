@@ -6,8 +6,10 @@ from Divide import *
 from Multiply import *
 from Subtract import *
 
-EDGE=50
+EDGE=8
+EDGE2=16
 GLOBAL_I=0
+GLOBAL_I2=0
 
 def rec_trans(p):
     
@@ -78,6 +80,9 @@ def rec_trans(p):
         e.execute()
 
     global GLOBAL_I
+    global GLOBAL_I2
+    global EDGE
+    global EDGE2
     
     talkg("gotostart")    
     
@@ -85,9 +90,14 @@ def rec_trans(p):
         
         for i in e.x:
             if GLOBAL_I==EDGE-1:
-                talkg("nextline")
-                GLOBAL_I=0 
-            talkg(convert_to_filename(e.x[i]))
+                GLOBAL_I=0
+                if not GLOBAL_I2==EDGE2-1:
+                    talkg("nextline")
+                    GLOBAL_I2+=1
+                else:
+                    talkg("gotostart")
+                    GLOBAL_I2=0
+            talkg(convert_to_filename(i))
             talkg("nextchar")
             GLOBAL_I+=1
         
@@ -96,9 +106,14 @@ def rec_trans(p):
         
         for i in e.y:
             if GLOBAL_I==EDGE-1:
-                talkg("nextline")
-                GLOBAL_I=0 
-            talkg(convert_to_filename(e.x[i]))
+                GLOBAL_I=0
+                if not GLOBAL_I2==EDGE2-1:
+                    talkg("nextline")
+                    GLOBAL_I2+=1
+                else:
+                    talkg("gotostart")
+                    GLOBAL_I2=0
+            talkg(convert_to_filename(i))
             talkg("nextchar")
             GLOBAL_I+=1
         
@@ -107,9 +122,14 @@ def rec_trans(p):
         
         for i in e.value:
             if GLOBAL_I==EDGE-1:
-                talkg("nextline")
-                GLOBAL_I=0 
-            talkg(convert_to_filename(e.value[i]))
+                GLOBAL_I=0
+                if not GLOBAL_I2==EDGE2-1:
+                    talkg("nextline")
+                    GLOBAL_I2+=1
+                else:
+                    talkg("gotostart")
+                    GLOBAL_I2=0
+            talkg(convert_to_filename(i))
             talkg("nextchar")
             GLOBAL_I+=1
         
