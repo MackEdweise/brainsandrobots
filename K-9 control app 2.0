@@ -121,9 +121,9 @@ class App:
     
     print("180")
 
-    GPIO.output(22,1)
+    GPIO.output(25,1)
     time.sleep(6)
-    GPIO.output(22,0)
+    GPIO.output(25,0)
       
     return
 
@@ -131,9 +131,9 @@ class App:
       
     print("right turn")
     
-    GPIO.output(23,1)
+    GPIO.output(27,1)
     time.sleep(3)
-    GPIO.output(23,0)
+    GPIO.output(27,0)
     
     return
 
@@ -141,9 +141,9 @@ class App:
       
     print("left turn")
     
-    GPIO.output(22,1)
+    GPIO.output(25,1)
     time.sleep(3)
-    GPIO.output(22,0)
+    GPIO.output(25,0)
     
     return
 
@@ -151,13 +151,13 @@ class App:
       
     print("forward")
     
-    GPIO.output(22,1)
+    GPIO.output(25,1)
     time.sleep(3)
-    GPIO.output(22,0)
+    GPIO.output(25,0)
     
-    GPIO.output(23,1)
+    GPIO.output(27,1)
     time.sleep(6)
-    GPIO.output(23,0)
+    GPIO.output(27,0)
 
     
     return
@@ -192,7 +192,7 @@ class App:
       
     print("arm up")
 
-    GPIO.output(25,0)
+    GPIO.output(22,0)
     
     GPIO.output(24,1)
     time.sleep(0.1)
@@ -205,7 +205,7 @@ class App:
       
     print("arm down")
 
-    GPIO.output(25,1)
+    GPIO.output(22,1)
     
     GPIO.output(24,1)
     time.sleep(0.1)
@@ -247,9 +247,9 @@ class App:
     else:
         print("retract")
         cable=0
-        GPIO.output(27,1)
+        GPIO.output(23,1)
         time.sleep(5)
-        GPIO.output(27,0)        
+        GPIO.output(23,0)        
         
     return
   
