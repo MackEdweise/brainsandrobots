@@ -4,7 +4,6 @@ import RPi.GPIO as GPIO
 GPIO.setup(24, GPIO.OUT)
 GPIO.setmode(GPIO.BOARD)
 GPIO.output(24, 0)
-GPIO.output(19, 0)
 
 class Command:
 
@@ -26,17 +25,12 @@ class Command:
             i=0
     
             while i< len(self._code):
-                
-                GPIO.output(24,0)
 
-                GPIO.output(19,self._code[i])
+                GPIO.output(24,self._code[i])
 
                 i=i+1
 
-                time.sleep(f/2)
+                time.sleep(f)
                 
-                GPIO.output(24,1)
-
-                time.sleep(f/2)
             
             return
