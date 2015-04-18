@@ -1,10 +1,12 @@
 import serial
 import time
+import RPi.GPIO as GPIO
 from Add import *
 from Command import *
 from Divide import *
 from Multiply import *
 from Subtract import *
+
 
 EDGE=8
 EDGE2=16
@@ -225,3 +227,20 @@ def convert_to_filename(num):
         file="nine"
         
     return file
+
+def freq_blink(f):
+    
+    GPIO.setup(24, GPIO.OUT)
+    GPIO.setmode(GPIO.BCM)
+    
+    for i in range(4):
+        
+        GPIO.output(24, 1)
+        
+        time.sleep(f/2)
+    
+        GPIO.output(24, 0)
+        
+        time.sleep(f/2)
+    
+    GPIO.cleanup()
