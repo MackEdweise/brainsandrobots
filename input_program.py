@@ -1,6 +1,9 @@
 from translator_functions import *
 
+
 talkg("Hello")
+
+freq_blink(2)
 
 p=input("Problem: ")
 print()
