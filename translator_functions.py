@@ -229,9 +229,10 @@ def convert_to_filename(num):
     return file
 
 def freq_blink(f):
-    
-    GPIO.setup(24, GPIO.OUT)
+
     GPIO.setmode(GPIO.BCM)
+    GPIO.setup(24, GPIO.OUT)
+
     
     for i in range(4):
         
