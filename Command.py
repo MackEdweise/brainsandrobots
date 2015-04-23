@@ -1,8 +1,8 @@
 import os
 import time
 import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(24, GPIO.OUT)
-GPIO.setmode(GPIO.BOARD)
 GPIO.output(24, 0)
 
 class Command:
