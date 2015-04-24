@@ -180,7 +180,7 @@ def current_var_switch(L,p,current_var,x,y,index,ref):
 def talkg(file):
     
 
-    s = serial.Serial('/dev/tty.usbmodem0000',9600)
+    s = serial.Serial('/dev/ttyACM0',115200)
      
 
     f = open(file,'r');
