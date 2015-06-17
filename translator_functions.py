@@ -186,15 +186,16 @@ def talkg(file):
     f = open(file,'r');
      
 
-    s.write("\r\n\r\n")
+    s.write("\r\n\r\n".encode())
     time.sleep(2)   
     s.flushInput()  
      
 
     for line in f:
         l = line.strip() 
-        print ('Sending: ' + l),
-        s.write(l + '\n') 
+        print ('Sending: ' + l)
+        wout = l + '\n'
+        s.write(wout.encode()) 
         grbl_out = s.readline() 
         print (' : ' + grbl_out.strip())
      
