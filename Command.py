@@ -28,8 +28,6 @@ class Command:
 
                 GPIO.output(24,self._code[i])
                 GPIO.output(24,0)
-                GPIO.output(24,self._code[i])
-                GPIO.output(24,0)
 
                 i=i+1
 
