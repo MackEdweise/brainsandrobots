@@ -1,7 +1,7 @@
 from translator_functions import *
 
 
-talkg("Hello")
+#talkg("Hello")
 
 freq_blink(2)
 
