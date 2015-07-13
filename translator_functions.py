@@ -197,7 +197,7 @@ def talkg(file):
         wout = l + '\n'
         s.write(wout.encode()) 
         grbl_out = s.readline() 
-        print (' : ' + grbl_out.strip())
+        print (' : '.encode() + grbl_out.strip())
      
     next=input(" <Enter> to continue to next sub-problem or finish ")
      
