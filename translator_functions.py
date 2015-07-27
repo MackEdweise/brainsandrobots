@@ -6,6 +6,9 @@ from Command import *
 from Divide import *
 from Multiply import *
 from Subtract import *
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.OUT)
+GPIO.output(24, 0)
 
 
 EDGE=8
