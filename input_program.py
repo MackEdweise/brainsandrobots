@@ -1,4 +1,7 @@
 from translator_functions import *
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.OUT)
+GPIO.output(24, 0)
 
 
 #talkg("Hello")
