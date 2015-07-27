@@ -20,7 +20,7 @@ class Command:
 
         def interpret(self,f):
 
-            os.system('espeak "{}"'.format(self._message))
+            os.system('espeak "{}" -s 120 -p 0 -v female3'.format(self._message))
 
             i=0
     
