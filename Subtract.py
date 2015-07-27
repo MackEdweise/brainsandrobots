@@ -4,9 +4,7 @@ from GetAnd import *
 from AndL import *
 from AndR import *
 from Compare import *
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(24, GPIO.OUT)
-GPIO.output(24, 0)
+
 
 class Subtract:
   
