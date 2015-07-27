@@ -5,9 +5,9 @@ class Multiply:
 
   def __init__(self,x,y):
     
-    self.x=x
-    self.y=y
-    self.value=x*y
+    self.x=int(x)
+    self.y=int(y)
+    self.value=self.x*self.y
     self.pcode=[]
     self.message="Result is {}".format(self.value)
     self.cncfile="multiplygrbl"
