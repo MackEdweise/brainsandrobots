@@ -6,9 +6,9 @@ class Divide:
 
   def __init__(self,x,y):
     
-    self.y=y
-    self.x=x
-    self.value=x//y
+    self.y=int(y)
+    self.x=int(x)
+    self.value=self.x//self.y
     self.pcode=[]
     self.cncfile="dividegrbl"
     
