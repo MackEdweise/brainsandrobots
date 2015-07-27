@@ -11,7 +11,7 @@ class Compare:
     self.x=int(x)
     self.y=int(y)
     self.value=self.x>self.y
-    self.message="Compare {} and {} by sending them to the comparator simultaneosly".format(x,y)
+    self.message="Compare {} and {} by sending them to the comparator simultaneously".format(x,y)
     self.cncfile="comparegrbl"
     self.pcode=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
     self.pcode[x]=0
