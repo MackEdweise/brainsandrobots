@@ -13,7 +13,7 @@ class Subtract:
         self.x=int(x)
         self.value=self.x-self.y
         self.pcode=[]
-        self.message="Result is {}".format(self.value)
+        self.message="Subtraction result is {}".format(self.value)
         self.cncfile="subtractgrbl"
       
         return
