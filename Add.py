@@ -7,7 +7,7 @@ class Add:
     self.x=int(x)
     self.y=int(y)
     self.value=self.x+self.y
-    self.message="Add {} and {} by latching {}, adding {} to {}. Result is {}".format(x,y,x,x,y,self.x+self.y)
+    self.message="Add {} and {} by latching {}, sending {} and {} to adder chip simultaneosly. Result is {}".format(x,y,x,x,y,self.x+self.y)
     self.pcode=[1,1,1,1,1,1,1,1,1,1]
     self.pcode[self.x]=0
     self.cncfile="addgrbl"
