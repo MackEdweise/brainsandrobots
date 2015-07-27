@@ -1,4 +1,7 @@
 from Command import *
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.OUT)
+GPIO.output(24, 0)
 
 class GetAnd:
 
@@ -6,7 +9,7 @@ class GetAnd:
     
     self.x=x
     self.y=y
-    self.value= x and y
+    self.value= int(x) and int(y)
     self.pcode=[1,1,1,1,0,1,1,1,1,1]
     self.message="Set and gate output {} to current working logic value".format(self.value)
     self.cncfile="getandgrbl"
