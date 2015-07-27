@@ -1,9 +1,7 @@
 from Command import *
 from Add import *
 from Compare import *
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(24, GPIO.OUT)
-GPIO.output(24, 0)
+
 
 class Divide:
 
